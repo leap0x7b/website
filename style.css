@@ -295,11 +295,11 @@ textarea:focus {
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .home > .social {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .social > a {
