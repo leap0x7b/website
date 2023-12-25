@@ -104,6 +104,7 @@ hr {
 
 .header {
   width: 100%;
+  border-bottom: 1px solid rgba(255 255, 255, .25);
 }
 
 .header > .container {
@@ -121,6 +122,7 @@ hr {
 
 .branding {
   gap: .25rem;
+  margin-bottom: .5rem;
 }
 
 .header-links {
