@@ -122,7 +122,6 @@ hr {
 
 .branding {
   gap: .25rem;
-  margin-bottom: .5rem;
 }
 
 .header-links {
@@ -145,6 +144,7 @@ hr {
 
 .footer {
   text-align: center;
+  border-top: 1px solid rgba(255 255, 255, .25);
 }
 
 .fediring {
@@ -153,11 +153,6 @@ hr {
   align-items: center;
   gap: 1rem;
   margin-bottom: 1rem;
-}
-
-.buttons > img,
-.buttons > a > img {
-  display: inline;
 }
 
 .container {
