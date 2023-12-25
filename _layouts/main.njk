@@ -1,0 +1,18 @@
+---
+layout: base
+title: {{ title }} | leap123
+---
+<header class="header container">
+  <a href="/" class="branding">
+    {%- include "leap.svg" -%}
+    <span>leap123</span>
+  </a>
+  <div class="header-links">
+    <a href="/">Home</a>
+    <a href="/blog">Blog</a>
+    <a href="/links">Links</a>
+  </div>
+</header>
+<main class="container">
+  {{ content | safe }}
+</main>

@@ -1,0 +1,314 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+dl,
+dd,
+hr {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+html {
+  background-color: #111519;
+}
+
+body {
+  font-family: Inter, sans-serif;
+  font-feature-settings: 'liga' 1, 'calt' 1;
+  color: white;
+  height: 100%;
+}
+
+@supports (font-variation-settings: normal) {
+  body { font-family: InterVariable, sans-serif; }
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: #5199e4;
+}
+
+hr {
+  border: 1px solid rgba(255 255, 255, .25);
+}
+
+.header {
+  width: 100%;
+}
+
+.header > .container {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.branding,
+.header-links {
+  display: flex;
+  align-items: center;
+}
+
+.branding {
+  gap: .25rem;
+}
+
+.header-links {
+  gap: 1rem;
+}
+
+.branding,
+.header-links > *,
+.leap > div > *,
+.fediring > a,
+.social > a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.branding > svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+.footer {
+  text-align: center;
+}
+
+.fediring {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.buttons > img,
+.buttons > a > img {
+  display: inline;
+}
+
+.container {
+  display: block;
+  max-width: 1024px;
+  margin: auto;
+  padding: 1rem 1.5rem;
+}
+
+.social.container {
+  padding-top: 0;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="search"],
+input[type="url"],
+textarea,
+button,
+.button {
+  padding-left: .75rem;
+  padding-right: .75rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  outline: none;
+  color: inherit;
+  border: none;
+  border-radius: .5rem;
+  background-color: rgba(255 255, 255, .125);
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+  transition-duration: 150ms;
+  text-decoration: none;
+}
+
+button:hover,
+.button:hover {
+  background-color: rgba(255 255, 255, .25);
+}
+
+button:active,
+.button:active {
+  background-color: rgba(255 255, 255, .125);
+  transform: scale(0.9);
+}
+
+input:focus,
+textarea:focus {
+  outline: 1px solid rgba(255 255, 255, .75);
+}
+
+::placeholder {
+  color: rgba(255 255, 255, .50);
+  opacity: 1;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+
+.leap {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  height: 100%;
+}
+
+.leap > svg {
+  width: auto;
+  height: 10vw;
+}
+
+.leap > div > * {
+  line-height: 2.5vw;
+  display: block;
+  font-size: 2vw;
+}
+
+@media (max-width: 1600px) {
+  .leap > svg {
+    width: auto;
+    height: 15vw;
+  }
+  
+  .leap > div > * {
+    line-height: 3.75vw;
+    display: block;
+    font-size: 3vw;
+  }
+}
+
+@media (max-width: 1280px) {
+  .leap > svg {
+    width: auto;
+    height: 20vw;
+  }
+  
+  .leap > div > * {
+    line-height: 5vw;
+    display: block;
+    font-size: 4vw;
+  }
+}
+
+@media (max-width: 800px) {
+  .leap > svg {
+    width: auto;
+    height: 40vw;
+  }
+  
+  .leap > div > * {
+    line-height: 10vw;
+    display: block;
+    font-size: 8vw;
+  }
+}
+
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.home > .social {
+  padding-bottom: 2rem;
+}
+
+.social > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social > a > svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: .5rem;
+}
+
+.johnvertisement {
+  display: block;
+  margin: auto;
+  max-width: 732px;
+  width: 100%;
+  height: 94px;
+  border: none;
+}

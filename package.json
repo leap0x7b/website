@@ -1,0 +1,13 @@
+{
+  "name": "leap-website",
+  "scripts": {
+    "build": "eleventy"
+  },
+  "author": "leap123",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy-navigation": "^0.3.5",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0"
+  }
+}
