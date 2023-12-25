@@ -155,6 +155,18 @@ hr {
   margin-bottom: 1rem;
 }
 
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons > img,
+.buttons > a > img {
+  display: inline;
+}
+
 .container {
   display: block;
   max-width: 1024px;
@@ -283,10 +295,11 @@ textarea:focus {
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
+  margin-bottom: 2rem;
 }
 
 .home > .social {
-  padding-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .social > a {
