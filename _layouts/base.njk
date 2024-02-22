@@ -1,90 +1,106 @@
-{% set mastodon %}
-<svg fill="#fff" viewBox="0 0 24 24">
-  <path d="M23.193 7.88c0-5.207-3.411-6.733-3.411-6.733C18.062.357 15.108.025 12.041 0h-.076c-3.069.025-6.02.357-7.74 1.147 0 0-3.412 1.526-3.412 6.732 0 1.193-.023 2.619.015 4.13.124 5.092.934 10.11 5.641 11.355 2.17.574 4.034.695 5.536.612 2.722-.15 4.25-.972 4.25-.972l-.09-1.975s-1.945.613-4.13.54c-2.165-.075-4.449-.234-4.799-2.892a5.5 5.5 0 0 1-.048-.745s2.125.52 4.818.643c1.646.075 3.19-.097 4.758-.283 3.007-.359 5.625-2.212 5.954-3.905.517-2.665.475-6.508.475-6.508zm-4.024 6.709h-2.497v-6.12c0-1.29-.543-1.944-1.628-1.944-1.2 0-1.802.776-1.802 2.313v3.349h-2.484v-3.35c0-1.537-.602-2.313-1.802-2.313-1.085 0-1.628.655-1.628 1.945v6.119H4.831V8.285c0-1.29.328-2.314.987-3.07.68-.759 1.57-1.147 2.674-1.147 1.278 0 2.246.491 2.886 1.474L12 6.585l.622-1.043c.64-.983 1.608-1.474 2.886-1.474 1.104 0 1.994.388 2.674 1.146.658.757.986 1.781.986 3.07v6.305z" />
-</svg>
-{% endset %}
-{% set youtube %}
-<svg fill="#fff" viewBox="0 0 24 24">
-  <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
-</svg>
-{% endset %}
-{% set github %}
-<svg fill="#fff" viewBox="0 0 24 24">
-  <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
-</svg>
-{% endset %}
+{% set fediverse %}<svg fill="currentColor" viewBox="64 163 873 873"><path d="M539 176q-32 0 -55 22t-25 55t20.5 58t56 27t58.5 -20.5t27 -56t-20.5 -59t-56.5 -26.5h-5zM452 271l-232 118q20 20 25 48l231 -118q-19 -20 -24 -48zM619 298q-13 25 -38 38l183 184q13 -25 39 -38zM477 320l-135 265l40 40l143 -280q-28 -5 -48 -25zM581 336 q-22 11 -46 10l-8 -1l21 132l56 9zM155 370q-32 0 -55 22.5t-25 55t20.5 58t56.5 27t59 -21t26.5 -56t-21 -58.5t-55.5 -27h-6zM245 438q1 9 1 18q-1 19 -10 35l132 21l26 -50zM470 474l-26 51l311 49q-1 -8 -1 -17q1 -19 10 -36zM842 480q-32 1 -55 23t-24.5 55t21 58 t56 27t58.5 -20.5t27 -56.5t-20.5 -59t-56.5 -27h-6zM236 493q-13 25 -39 38l210 210l51 -25zM196 531q-21 11 -44 10l-9 -1l40 256q21 -10 45 -9l8 1zM560 553l48 311q21 -10 44 -9l10 1l-46 -294zM755 576l-118 60l8 56l135 -68q-20 -20 -25 -48zM781 625l-119 231 q28 5 48 25l119 -231q-28 -5 -48 -25zM306 654l-68 134q28 5 48 25l60 -119zM568 671l-281 143q19 20 24 48l265 -135zM513 771l-51 25l106 107q13 -25 39 -38zM222 795q-32 0 -55.5 22.5t-25 55t21 57.5t56 27t58.5 -20.5t27 -56t-20.5 -58.5t-56.5 -27h-5zM311 863 q2 9 1 18q-1 19 -9 35l256 41q-1 -9 -1 -18q1 -18 10 -35zM646 863q-32 0 -55 22.5t-24.5 55t20.5 58t56 27t59 -21t27 -56t-20.5 -58.5t-56.5 -27h-6z"/></svg>{% endset %}
 <!doctype html>
 <html>
   <head>
-    <title>{{ title }}</title>
     <meta charset="utf-8" />
+    <meta name="title" content="{{ metatitle }}" />
+    <meta name="description" content="{{ description }}" />
+    {%- if title -%}
+    <title>{{ title }} | leap123</title>
+    <meta property="og:title" content="{{ title }}" />
+    <meta property="og:site_name" content="leap123" />
+    {%- else -%}
+    <title>leap123</title>
+    <meta property="og:title" content="leap123" />
+    {%- endif -%}
+    <meta property="og:type" content="{{ ogtype }}" />
+    <!--meta property="og:url" content="https://leap123.is-really.cool" /-->
+    <meta property="og:url" content="https://leap123.neocities.org" />
+    <meta property="og:image" content="/leap.svg" />
+    <meta property="og:description" content="{{ description }}" />
+    <meta name="theme-color" content="#5199e4" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="preconnect" href="https://rsms.me/">
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="icon" href="/leap.svg" />
+    <link rel="apple-touch-icon" href="/leap.svg" />
+    <link rel="preconnect" href="https://rsms.me/" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+    <link rel="stylesheet" href="https://unpkg.com/prism-themes@1.9.0/themes/prism-nord.css">
     <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
 	  {{ content | safe }}
     <footer class="footer">
-      <!--iframe src="https://john.citrons.xyz/embed?ref=leap123.is-really.cool" class="johnvertisement" /-->
+      <div class="johnvertisement">
+        <iframe src="https://john.citrons.xyz/embed?ref=leap123.neocities.org"></iframe>
+      </div>
       <div class="container">
         <!--div class="fediring">
-          <a href="https://fediring.net/previous?host=leap123.is-really.cool">← Prev</a>
+          <a href="https://fediring.net/previous?host=leap123.neocities.org">← Prev</a>
           <a href="https://fediring.net/"><img src="/buttons/fediring.gif" alt="Fediring" /></a>
-          <a href="https://fediring.net/next?host=leap123.is-really.cool">→ Next</a>
+          <a href="https://fediring.net/next?host=leap123.neocities.org">→ Next</a>
         </div-->
         <div class="social">
-          <a href="https://wetdry.world/@leap123" aria-label="Mastodon/Fediverse">{{ mastodon | safe }} @leap123@wetdry.world</a>
-          <a href="https://youtube.com/@leap123_" aria-label="YouTube">{{ youtube | safe }} @leap123_</a>
-          <a href="https://github.com/leap0x7b" aria-label="GitHub">{{ github | safe }} @leap0x7b</a>
+          <a href="https://labyrinth.zone/@leap123" aria-label="Mastodon/Fediverse" rel="me">{{ fediverse | safe }} @leap123@labyrinth.zone</a>
+          <a href="https://youtube.com/@leap123_" aria-label="YouTube">{% bootstrapIcons "youtube" %} @leap123_</a>
+          <a href="https://github.com/leap0x7b" aria-label="GitHub">{% bootstrapIcons "github" %} @leap0x7b</a>
         </div>
         <div class="buttons">
           <a href="/"><img src="/buttons/leap123.gif" alt="leap123" /></a>
-          <a href="https://essem.space"><img src="/buttons/esm.png" alt="Essem" onmouseover="this.src='/buttons/esn.png'" onmouseout="this.src='/buttons/esm.png'" /></a>
+          <a href="https://essem.space"><img src="/buttons/esm.png" alt="Essem" onmouseover="this.src='/buttons/commonjs.png'" onmouseout="this.src='/buttons/esm.png'" /></a>
           <a href="https://invoxiplaygames.uk"><img src="/buttons/emma.png" alt="InvoxiPlayGames" /></a>
           <a href="https://ioletsgo.gay"><img src="/buttons/ioletsgo.gif" alt="ioletsgo" /></a>
           <a href="https://openrain502r.github.io/athe52.github.io"><img src="/buttons/athe52.png" alt="athe52" /></a>
           <a href="https://boxy.neocities.org"><img src="/buttons/boky.png" alt="boxy" /></a>
+		      <a href="https://dabric.xyz"><img src="/buttons/dabric.png" alt="dabric" /></a>
           <a href="https://nano.lgbt"><img src="/buttons/nano.png" alt="nano" /></a>
           <a href="https://danielah05.github.io"><img src="/buttons/daniela.gif" alt="daniela" /></a>
           <a href="https://mae.wtf"><img src="/buttons/mae.png" alt="mae" /></a>
           <a href="https://sneexy.pages.gay"><img src="/buttons/sneexy.gif" alt="sneexy" /></a>
           <a href="https://arimelody.me"><img src="/buttons/ari.gif" alt="Ari Melody" /></a>
-          <a href="https://freeplay.floof.company"><img src="/buttons/freeplay.png" alt="FREEEEE" /></a>
+          <a href="https://freeplay.floof.company"><img src="/buttons/freeplay.png" alt="FREEEEEEEEEEEEEEEEEEEEEEEEEE" /></a>
           <a href="https://houl.floof.company"><img src="/buttons/houl.png" alt="Houl" /></a>
           <a href="https://sterophonick.github.io"><img src="/buttons/sterophonick.gif" alt="Sterophonick" /></a>
         </div>
       </div>
       <hr />
-      <div class="buttons container">
+      <div class="container buttons">
         <a href="https://11ty.dev"><img src="/buttons/made-with-11ty.gif" alt="Made with 11ty" /></a>
+        <a href="https://neocities.org"><img src="/buttons/neocities.gif" alt="Neocities" /></a>
         <img src="/buttons/88x31.gif" alt="88x31" />
+        <a href="https://88x31.kate.pet/"><img src="/buttons/88x31.kate.pet.png" alt="88x31.kate.pet" /></a>
+        <!-- I think I need to link the button to eightyeightthirty.one directly CMIIW -->
+        <a href="https://eightyeightthirty.one"><img src="https://eightyeightthirty.one/88x31.png" alt="eighteightthirty.one" /></a>
+        <a href="https://openbooks.neocities.org/"><img src="/buttons/openbooks.gif" alt="Openbooks" /></a>
         <img src="/buttons/invalid-html.gif" alt="bad html markup" />
         <img src="/buttons/css.png" alt="CSS is awesome" />
-        <img src="/buttons/zero-javascript.gif" alt="Proudly zero JavaScript!" /> <!-- well there's technically one in the essem button but other than that, its 99% javascript free -->
+        <img src="/buttons/zero-javascript.gif" alt="Proudly zero JavaScript!" /> <!-- well there's technically one in the essem button but who cares -->
         <img src="/buttons/svg.gif" alt="This site is SVG powered" />
-        <img src="/buttons/ceasefire-now.gif" alt="Ceasefire NOW!" />
+        <a href="https://arab.org/click-to-help/palestine/"><img src="/buttons/ceasefire-now.gif" alt="Ceasefire NOW!" /></a>
         <img src="/buttons/linux-now.gif" alt="Linux NOW!" />
-        <img src="/buttons/fuck-facebook.gif" alt="You won't find me on Facebook" />
+        <a href="https://store.steampowered.com/app/240"><img src="/buttons/source.gif" alt="[][][][][][][][] ERROR!" /></a>
+        <a href="https://emulation.gametechwiki.com/index.php/Main_Page"><img src="/buttons/emulate-now.gif" alt="Emulate NOW!" /></a>
+        <a href="https://ublockorigin.com"><img src="/buttons/ublock.png" alt="uBlock Origin NOW!" /></a>
+        <a href="https://youtu.be/rjRV0G6qWgw"><img src="/buttons/hhgregg.png" alt="Hhgregg CULT!" /></a>
+        <img src="/buttons/kys.gif" alt="You should [vine boom sound effect], NOW!" />
+        <img src="/buttons/fuck-facebook.gif" alt="Fuck Facebook" />
         <img src="/buttons/cheez-it.gif" alt="Built eating Cheez-It" />
         <img src="/buttons/dr-pepper.gif" alt="Powered by Dr. Pepper" />
         <a href="https://deltarune.com"><img src="/buttons/deltarune.png" alt="God fucking dammit, Kris! Where the fuck are we?" /></a>
-        <a href="https://emulation.gametechwiki.com/index.php/Main_Page"><img src="/buttons/emulate-now.gif" alt="Emulate NOW!" /></a>
+        <a href="https://deltarune.com"><img src="/buttons/ralsei.gif" alt="Ralsei smoking a fat blunt" /></a>
         <a href="https://epicblazed.com"><img src="/buttons/epic-megablazed.png" alt="Epic Blazed" /></a>
         <a href="https://smokepowered.com"><img src="/buttons/smoke.gif" alt="High on Smoke" /></a>
-        <a href="https://sweensters.neocities.org"><img src="/buttons/firtnite.png" alt="Firtnite" /></a>
+        <a href="https://wetdry.world/@timsweeneyepic"><img src="/buttons/firtnite.png" alt="Firtnite" /></a>
         <a href="https://www.mozilla.org/en-US/firefox/new"><img src="/buttons/firefox.gif" alt="Firefox" /></a>
         <a href="https://spyware.neocities.org/articles/chrome"><img src="/buttons/chrome.gif" alt="Anything but Chrome!" /></a>
-        <a href="https://ublockorigin.com"><img src="/buttons/ublock.png" alt="uBlock Origin NOW!" /></a>
         <a href="https://store.steampowered.com/app/70"><img src="/buttons/half-life.gif" alt="Half-Life" /></a>
         <a href="https://fedidb.org"><img src="/buttons/fediverse.gif" alt="Join the Fediverse!" /></a>
         <img src="/buttons/graphic-design.gif" alt="Graphic design is my passion" />
         <a href="https://www.youtube.com/watch?v=BbeeuzU5Qc8"><img src="/buttons/josh-hutcherson.gif" alt="Josh Hutcherson - Whistle" /></a>
         <a href="https://youtube.com/@Petscop"><img src="/buttons/child-library.gif" alt="I visited the child library!" /></a>
         <a href="https://youtube.com/@ScottTheWoz"><img src="/buttons/scott-the-woz.gif" alt="Hey all, Scott here!" /></a>
-        <img src="/buttons/nft.gif" alt="No Fucking Thanks" />
-        <img src="/buttons/no-web3.gif" alt="Say no to Web3, keep the web free" />
-        <img src="/buttons/kys.gif" alt="You should [vine boom sound effect], NOW!" />
+		    <a href="https://web3isgoinggreat.com/?id=tbd-announces-they-will-trademark-web5"><img src="/buttons/web12.png" alt="Runs on Web12 Technology" /></a>
+        <a href="https://web3isgoinggreat.com/"><img src="/buttons/nft.gif" alt="No Fucking Thanks" /></a>
+        <a href="https://yesterweb.org/no-to-web3/"><img src="/buttons/no-web3.gif" alt="Say no to Web3, keep the web free" /></a>
       </div>
     </footer>
   </body>
