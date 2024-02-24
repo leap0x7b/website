@@ -32,6 +32,7 @@ export default function(config) {
     return moment(date).format("YYYY-MM-DD");
   });
 
+  config.addPassthroughCopy("ring.txt");
   config.addPassthroughCopy("style.css");
   config.addPassthroughCopy("leap.svg");
   config.addPassthroughCopy("buttons");

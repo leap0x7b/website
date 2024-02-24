@@ -31,9 +31,9 @@ title: Links
 <a href="https://11ty.dev"><img src="https://leap123.neocities.org/buttons/made-with-11ty.gif" alt="Made with 11ty" /></a>
 ```
 
-<a href="https://arab.org/click-to-help/palestine/"><img src="/buttons/ceasefire-now.gif" alt="Ceasefire NOW!" /></a>
+<a href="https://hillhouse.neocities.org/journal/notes/palestine"><img src="/buttons/ceasefire-now.gif" alt="Ceasefire NOW!" /></a>
 ```html
-<a href="https://arab.org/click-to-help/palestine/"><img src="https://leap123.neocities.org/buttons/ceasefire-now.gif" alt="Ceasefire NOW!" /></a>
+<a href="https://hillhouse.neocities.org/journal/notes/palestine"><img src="https://leap123.neocities.org/buttons/ceasefire-now.gif" alt="Ceasefire NOW!" /></a>
 ```
 
 <a href="https://store.steampowered.com/app/240"><img src="/buttons/source.gif" alt="[][][][][][][][] ERROR!" /></a>
