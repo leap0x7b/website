@@ -20,6 +20,9 @@ dependencies:
   markdown-it-anchor:
     specifier: ^8.6.7
     version: 8.6.7(@types/markdown-it@13.0.7)(markdown-it@14.0.0)
+  markdown-it-attrs:
+    specifier: ^4.1.6
+    version: 4.1.6(markdown-it@14.0.0)
   moment:
     specifier: ^2.30.1
     version: 2.30.1
@@ -1032,6 +1035,15 @@ packages:
       markdown-it: '*'
     dependencies:
       '@types/markdown-it': 13.0.7
+      markdown-it: 14.0.0
+    dev: false
+
+  /markdown-it-attrs@4.1.6(markdown-it@14.0.0):
+    resolution: {integrity: sha512-O7PDKZlN8RFMyDX13JnctQompwrrILuz2y43pW2GagcwpIIElkAdfeek+erHfxUOlXWPsjFeWmZ8ch1xtRLWpA==}
+    engines: {node: '>=6'}
+    peerDependencies:
+      markdown-it: '>= 9.0.0'
+    dependencies:
       markdown-it: 14.0.0
     dev: false
 

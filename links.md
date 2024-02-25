@@ -12,6 +12,7 @@ title: Links
 - <span>{% bootstrapIcons "github" %} [@leap0x7b](https://github.com/@leap0x7b)</span>
 - <span>{% bootstrapIcons "twitter" %} <!--{% bootstrapIcons "twitter-x" %}--> [@leap123__](https://twitter.com/@leap123__)</span>
 - <span>{% simpleIcons "bluesky" %} [@leap123.bsky.social](https://bsky.app/profile/leap123.bsky.social)</span>
+- <span>{% bootstrapIcons "envelope-fill" %} [leap123@tuta.io](mailto:leap123@tuta.io)</span>
 - <span>{% bootstrapIcons "envelope-fill" %} [leapofazzam@protonmail.com](mailto:leapofazzam@protonmail.com)</span>
 
 ## Link me

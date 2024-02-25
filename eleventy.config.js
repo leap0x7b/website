@@ -4,6 +4,7 @@ import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 import navigation from "@11ty/eleventy-navigation";
 import markdownIt from "markdown-it";
 import anchor from "markdown-it-anchor";
+import attrs from "markdown-it-attrs";
 import * as simpleIcons from "simple-icons";
 import { RetrieveGlobals } from "node-retrieve-globals";
 import moment from "moment";
@@ -13,14 +14,16 @@ export default function(config) {
   config.addPlugin(navigation);
 
   config.setLibrary("md",
-    markdownIt({ html: true }).use(anchor, {
-      permalink: anchor.permalink.linkAfterHeader({
-        style: "aria-label",
-        assistiveText: title => `Permalink to "${title}"`,
-        wrapper: [`<div class="title">`, "</div>"],
-        symbol: fs.readFileSync(path.normalize(`node_modules/bootstrap-icons/icons/link-45deg.svg`))
+    markdownIt({ html: true })
+      .use(attrs)
+      .use(anchor, {
+        permalink: anchor.permalink.linkAfterHeader({
+          style: "aria-label",
+          assistiveText: title => `Permalink to "${title}"`,
+          wrapper: [`<div class="title">`, "</div>"],
+          symbol: fs.readFileSync(path.normalize(`node_modules/bootstrap-icons/icons/link-45deg.svg`))
+        })
       })
-    })
   );
 
   config.addShortcode("simpleIcons", name => simpleIcons[`si${name.charAt(0).toUpperCase()}${name.slice(1)}`].svg.replaceAll("role=\"img\"", "fill=\"currentColor\""));
@@ -36,19 +39,18 @@ export default function(config) {
   config.addPassthroughCopy("style.css");
   config.addPassthroughCopy("leap.svg");
   config.addPassthroughCopy("buttons");
+  config.addPassthroughCopy("indoring/logo.svg");
+  config.addPassthroughCopy("indoring/linkcircle.min.js");
+
   config.addCollection("posts", collection =>
-    collection.getFilteredByGlob("_posts/*.md")
-      .sort((a, b) => b.date - a.date)
+    collection.getFilteredByGlob("_posts/*.md").sort((a, b) => b.date - a.date)
   );
 
   config.setFrontMatterParsingOptions({
     engines: {
       "javascript": function(frontMatterCode) {
         let vm = new RetrieveGlobals(frontMatterCode);
-
-        // Do you want to pass in your own data here?
-        let data = {};
-        return vm.getGlobalContext(data, {
+        return vm.getGlobalContext({}, {
           reuseGlobal: true,
           dynamicImport: true,
         });
