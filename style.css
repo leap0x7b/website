@@ -150,12 +150,16 @@ hr {
   padding-top: 1rem;
 }
 
-.fediring {
+.fediring,
+.nullring {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
   margin-bottom: 1rem;
+}
+
+.fediring {
+  gap: 1rem;
 }
 
 .buttons {
