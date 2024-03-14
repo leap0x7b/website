@@ -5,6 +5,8 @@ title: Indoring
 
 Selamat datang di Indoring! Ini adalah webring untuk situs web indie yang pemiliknya adalah orang Indonesia. Situs web apa pun diperbolehkan di sini, selama Anda mengikuti aturan di bawah. Situs Anda bahkan tidak perlu berbahasa Indonesia untuk mendaftar!
 
+[![Powered by Linkcircle](/buttons/linkcircle.gif)](https://dabric.xyz/post/linkcircle/)
+
 ## Aturan
 1. Situs tidak harus menyertakan konten yang secara spesifik berkaitan dengan kewarganegaraan Indonesia. Cuma pemiliknya harus orang Indonesia!
 2. Tidak ada ujaran kebencian, konten diskriminatif, dan fanatisme.
@@ -56,6 +58,10 @@ Karena ini hanya HTML dan CSS dasar, ini dapat disesuaikan sesuai keinginan Anda
 
 ## Anggota-anggota webring
 [![leap123](/buttons/leap123.gif)](https://leap123.neocities.org){data-lc-slug="leap123.neocities.org"}
-**Pemilik**: leap123<br/>
+**Pemilik:** leap123<br/>
 **Deskripsi:** Situs web saya dengan blog. Posting kapan pun saya mau.<br/>
+<br/>
+[kekavigi](https://kekavigi.xyz/){data-lc-slug="kekavigi.xyz"}<br/>
+**Pemilik**: kekavigi<br/>
+**Deskripsi:** Kumpulan tulisan pribadi.
 {data-linkcircle}
