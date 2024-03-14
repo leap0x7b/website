@@ -143,7 +143,7 @@ hr {
 .header-links > *,
 .leap > div > *,
 .fediring > a,
-#linuxring > a,
+#linuxring > table > tbody > tr > td > a,
 .social > a {
   color: inherit;
   text-decoration: none;
