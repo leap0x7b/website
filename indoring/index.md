@@ -5,7 +5,7 @@ title: Indoring
 
 Selamat datang di Indoring! Ini adalah webring untuk situs web indie yang pemiliknya adalah orang Indonesia. Situs web apa pun diperbolehkan di sini, selama Anda mengikuti aturan di bawah. Situs Anda bahkan tidak perlu berbahasa Indonesia untuk mendaftar!
 
-[![Powered by Linkcircle](/buttons/linkcircle.gif)](https://dabric.xyz/post/linkcircle/)
+[![Powered by Linkcircle](/buttons/linkcircle.png)](https://dabric.xyz/post/linkcircle/) {style="display:flex;justify-content:center"}
 
 ## Aturan
 1. Situs tidak harus menyertakan konten yang secara spesifik berkaitan dengan kewarganegaraan Indonesia. Cuma pemiliknya harus orang Indonesia!
